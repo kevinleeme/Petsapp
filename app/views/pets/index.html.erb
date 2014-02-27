@@ -1,0 +1,8 @@
+<h1> This is a list of all my pets! </h1>
+
+<% @pets.each do |list| %>
+<p>
+<%= list.name %> :
+<%= link_to "Pet Details", pet_path(list.id) %>
+<% end %>
+
